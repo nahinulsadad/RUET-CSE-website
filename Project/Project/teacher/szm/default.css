@@ -1,0 +1,276 @@
+
+body header hgroup h1 {
+	font-size: 2.20em;
+	line-height: 1em;
+	padding-top: 10px;
+}
+
+body header hgroup h2 {
+	font-size: 0.9em;
+	line-height: 1em;
+	padding-top: 5px; 
+}
+
+nav.navigation {
+	background-color: #003366;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 100%;
+	float: right;
+		
+}
+
+nav.navigation li {
+	float: right;
+	padding-top: 11px;
+	padding-left: 18px;
+	padding-bottom: 11px;
+	padding-right: 6px;
+}
+
+nav.navigation li:first-of-type {
+	padding-right: 15%;
+}
+
+nav.navigation ul li a {
+	color: rgb(191, 191, 191);
+	text-decoration: none;
+	line-height: 0em;
+	font-size: 1.1em;
+	width: 10%;
+}
+
+nav.navigation li a:hover {
+  color: white ;
+}
+
+body.home nav a.home, body.others nav a.others, body.teaching nav a.teaching, body.academic nav a.academic, body.contact nav a.contact {
+	background-color: rgb(128, 191, 255);
+	color: white;
+	font-weight: bolder;
+	padding-top: 7.5px;
+	padding-left: 13.5px;
+	padding-bottom: 9px;
+	padding-right: 13.5px;
+}
+
+footer {
+	clear: both;
+}
+
+footer address {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 12%;
+	padding-right: 12%;		
+}
+
+footer address p {
+	font-style: normal;
+	font-size: 1.20em;
+	text-align: center;
+	border-top: 1px solid rgb(224, 229, 235);
+	padding-top: 1em;
+}
+
+body header address p{
+	font-weight: bold;
+}
+
+@media screen and (min-width : 801px){
+
+	label, input, #menu {
+		display: none;
+	}
+
+	/*width of header is 30% and left padding is 12%*/
+	body header hgroup {
+		float: left;
+		width: 30%;
+		padding-left: 12%;
+	}
+
+	/*width of address is 40%*/
+	body header address {
+		font-size: 0.95em;
+		float: left;
+		width: 40%;
+		font-weight: normal;
+		font-style: normal;
+		padding-top: 15px;
+		text-align: right;
+		line-height: 1.1em;
+	}
+
+
+	/*width of img is 5% and righ padding is 12%*/
+	body header img {
+		max-width: 100%;
+	    height: auto;
+	    width: auto\9; /* ie8 */
+	}
+}
+
+
+@media screen and ( max-width: 800px){
+	
+	label, input, #menu {
+		display: none;
+	}
+
+	/*width of header is 30% and left padding is 12%*/
+	body header hgroup {
+		float: left;
+		width: 40%;
+		padding-left: 5%;
+	}
+
+
+	/*width of address is 40%*/
+	body header address {
+		font-size: 0.95em;
+		float: left;
+		width: 40%;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 1em;
+		padding-top: 15px;
+		padding-bottom: 3.5px;
+		text-align: right;
+	}
+
+	/*width of img is 5% and righ padding is 12%*/
+	body header img {
+		max-width: 100%;
+	    height: auto;
+	    width: auto\9; /* ie8 */
+	}
+	
+}
+
+@media screen and ( max-width: 580px){
+	
+	label, input, #menu {
+		clear: both;
+	}
+
+	body header hgroup {
+		float: left;
+		width: 70%;
+		padding-left: 5%;
+		border-left: 1px solid rgb(224, 229, 235);
+	}
+
+	body header
+	{
+		padding-bottom: 4px;
+	}
+
+	header address {
+		display: none;
+	}
+	
+	/*Create a horizontal list with spacing*/
+	li {
+		display:inline-block;
+		float: left;
+		margin-right: 1px;
+	}
+
+	/*Style for menu links*/
+	li a {
+		display:block;
+		min-width:140px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		font-family: Calibri, Arial, sans-serif;
+		color: #fff;
+		background: #2464AE;
+		text-decoration: none;
+		border-bottom: 0.9px solid white;
+	}
+
+	/*Hover state for top level links*/
+	li:hover a {
+		background: rgb(128, 191, 255);
+	}
+
+
+	/*Display the dropdown on hover*/
+	ul li a:hover{
+		display: block;
+	}
+
+
+	/*Style 'show menu' label button and hide it by default*/
+	.show-menu {
+		font-family: Calibri, Arial, sans-serif;
+		font-size: 1.2em;
+		text-decoration: none;
+		color: #fff;
+		background: rgb(128, 191, 255);
+		text-align: center;
+		padding: 10px 0;
+		display: none;
+		border-radius: 2px;
+	}
+
+	/*Hide checkbox*/
+	input[type=checkbox]{
+	    display: none;
+	}
+
+	/*Show menu when invisible checkbox is checked*/
+	input[type=checkbox]:checked ~ #menu{
+	    display: block;
+	}
+
+
+	/*Responsive Styles*/
+
+	@media screen and (max-width : 580px){
+		/*Make dropdown links appear inline*/
+		
+		body.home ul, body.others ul, body.teaching ul, body.contact ul {
+			position: static;
+			display: none;
+		}
+
+		body.academic nav {
+			display: none;
+
+		}
+
+
+
+		/*Create vertical spacing*/
+		li {
+			margin-bottom: 1px;
+		}
+		/*Make all menu links full width*/
+		ul li, li a {
+			width: 100%;
+		}
+		/*Display 'show menu' link*/
+		.show-menu {
+			display:block;
+		}
+	}
+
+	@media screen and (max-width: 340px){
+		header img {
+			display: none;
+		}
+
+		body header hgroup{
+			width: 100%;
+			padding-bottom: 4px;
+		}
+	}
+
+}
+
+
+

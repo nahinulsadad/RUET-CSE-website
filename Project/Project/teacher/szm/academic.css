@@ -1,0 +1,146 @@
+.title {
+		padding-top: 5px;
+		padding-bottom: 5px;
+}	
+
+#aca {
+		padding-left: 18px;
+		padding-right: 18px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		background-color: #003366;
+		text-align: center;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+}
+	
+#aca a {
+		color: white;
+}
+
+div li {
+		padding-left: 20px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+}
+
+div li a {
+	color: rgb(128, 191, 255);
+	font-weight: bolder;
+}
+
+#skills{
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgb(224, 229, 235);
+}
+
+.span-logo {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 3px;
+}
+
+#uni_profile {
+	padding-top: 15px;
+}
+
+#publications a {
+	color: black;
+	font-weight: bold;
+}
+
+#heading{
+	clear: right;
+	font-weight: bold;
+	font-size: 1.8em;
+	padding-top: 7px;
+	padding-bottom: 0.4em;
+	border-bottom: 1px solid rgb(224, 229, 235);
+	width: 100%;
+}
+
+.left_border{
+	padding-left: 2%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+h2.course {
+	color: #003366;
+	font-weight: bold;
+}
+
+@media screen and (min-width : 801px){
+	#vertical {
+		float: left;
+		width: 30%;
+	}
+
+	.title, div div {
+		clear: both;
+		padding-left: 36%;
+		padding-right: 6%;
+		font-size: 1.2em;
+	}
+
+	section {
+		float: left;
+		padding-right: 12%;
+		width: 55%;
+	}
+
+
+
+}
+
+@media screen and ( max-width: 800px){
+	#vertical {
+		float: left;
+		width: 30%;
+	}
+
+	.title, div div{
+		clear: both;
+		padding-left: 21%;
+		padding-right: 6%;
+		font-size: 1.1em;
+	}
+
+	section {
+		float: left;
+		padding-right: 7%;
+		width: 55%;
+	}
+
+}
+
+@media screen and ( max-width: 580px){
+	#vertical {
+		width: 100%;
+	}
+
+	.title, div div, section {
+		clear: both;
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	div li{
+		padding: 0%;
+	}
+
+	div li a {
+		color: white;
+	}
+
+	#uni_profile, #skills {
+		padding: 0px;
+		border-bottom: 0px solid rgb(224, 229, 235);
+	}	
+
+	.span-logo {
+		display: none;
+	}
+}

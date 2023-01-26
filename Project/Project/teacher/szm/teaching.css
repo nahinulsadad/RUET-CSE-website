@@ -1,0 +1,39 @@
+section {
+	padding-left: 12%;
+	padding-right: 12%;
+	
+}
+
+#heading{
+	clear: right;
+	font-weight: bold;
+	font-size: 1em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	border-bottom: 1px solid rgb(224, 229, 235);
+	width: 100%;
+}
+
+.left_border{
+	padding-left: 8%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.course{
+	font-size: 1.4em;
+	padding-top: 0.5em;
+	padding-bottom: 1.2em;
+	letter-spacing: 0.1em;
+	border-left: 4px solid red;
+}
+
+section article p a {
+	color: #5EACF1;
+}
+
+section article p {
+	font-size: 1.2em;
+}
+
+

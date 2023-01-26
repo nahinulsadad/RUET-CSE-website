@@ -1,0 +1,165 @@
+ol li {
+	list-style: decimal;
+	font-weight: bolder;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-size: 1.2em; 
+}
+
+ol {
+	padding-left: 8%;
+	
+}
+
+#favorite_movie a {
+	color: black;
+	font-weight: bold;
+}
+
+body.home nav a.home, body.others nav a.others, body.teaching nav a.teaching, body.academic nav a.academic, body.contact nav a.contact {
+	background-color: #003366;
+	color: rgb(191, 191, 191);
+	font-weight: normal;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+}
+
+.others, nav a.others {
+	background-color: rgb(128, 191, 255);
+	color: white !important;
+	font-weight: bolder;
+	padding-top: 7.5px;
+	padding-left: 13.5px;
+	padding-bottom: 9px;
+	padding-right: 13.5px;
+}
+
+
+.title {
+		padding-top: 5px;
+		padding-bottom: 5px;
+}	
+
+#aca {
+		padding-left: 18px;
+		padding-right: 18px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		background-color: #003366;
+		text-align: center;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+}
+	
+#aca a {
+		color: white;
+}
+
+div li {
+		padding-left: 20px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+}
+
+div li a {
+	color: rgb(128, 191, 255);
+	font-weight: bolder;
+}
+
+#heading{
+	clear: right;
+	font-weight: bold;
+	font-size: 1.8em;
+	padding-top: 7px;
+	padding-bottom: 0.4em;
+	border-bottom: 1px solid rgb(224, 229, 235);
+	width: 100%;
+}
+
+.left_border{
+	padding-left: 2%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+h2.course {
+	color: #003366;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-bottom: 0.3em;
+}
+
+section img {
+		max-width: 100%;
+	    height: auto;
+	    width: auto\9; /* ie8 */
+}
+
+@media screen and (min-width : 801px){
+	#vertical {
+		float: left;
+		width: 30%;
+	}
+
+	.title, div div {
+		clear: both;
+		padding-left: 36%;
+		padding-right: 6%;
+		font-size: 1.2em;
+	}
+
+	section {
+		float: left;
+		padding-right: 12%;
+		width: 55%;
+	}
+
+
+
+}
+
+@media screen and ( max-width: 800px){
+	#vertical {
+		float: left;
+		width: 30%;
+	}
+
+	.title, div div{
+		clear: both;
+		padding-left: 21%;
+		padding-right: 6%;
+		font-size: 1.1em;
+	}
+
+	section {
+		float: left;
+		padding-right: 7%;
+		width: 55%;
+	}
+
+}
+
+@media screen and ( max-width: 580px){
+	#vertical {
+		width: 100%;
+	}
+
+	.title, div div, section {
+		clear: both;
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	div li{
+		padding: 0%;
+	}
+
+	div li a {
+		color: white;
+	}
+
+}
