@@ -1,0 +1,14 @@
+Project Title: RUET CSE website with admin, teacher and student section.
+
+1. Create database named "p_db". Then import database file p_db.sql to xampp.
+   username: "root"
+   password: ""
+
+2. Go to fpdf.php
+   Then find this line (2/3 no line)
+
+	define('FPDF_FONTPATH', "FONT_DIRECTORY_PATH");
+
+3. Then find the "font" directory path in the project and update font directory path.
+	
+	define('FPDF_FONTPATH', "C:/xampp/htdocs/project5/font/");
